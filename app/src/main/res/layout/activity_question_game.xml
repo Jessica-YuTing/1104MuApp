@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFECC2"
+    tools:context=".QuestionGame">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#F1C188"
+        android:text="找到對的材料"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:contextClickable="false"
+        android:text=""
+        android:textIsSelectable="false"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="45dp"
+        android:contextClickable="false"
+        android:text=""
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ImageButton
+        android:id="@+id/voiceButton"
+        android:layout_width="72dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="48dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:srcCompat="@drawable/voice_message" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="158dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/flour0" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="158dp"
+        android:layout_height="173dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/milk00" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="158dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="80dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/egg" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="158dp"
+        android:layout_height="173dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="80dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/salt0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
